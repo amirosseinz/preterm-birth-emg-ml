@@ -150,6 +150,4 @@ print(f"Preterm probability: {probability:.2%}")
 
 This project is for educational and portfolio purposes.
 
-## Contact
 
-For questions or collaboration: [Your contact information]
