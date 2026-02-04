@@ -66,13 +66,13 @@ Hyperparameter optimization via grid search with 5-fold cross-validation.
 
 ```
 preterm/
-├── Model.ipynb                    # Main analysis notebook
-├── preterm_birth_dataset.csv      # EMG feature dataset
-├── random_forest_model.pkl        # Trained classifier
-├── scaler.pkl                     # Fitted StandardScaler
-├── README.md                      # This file
-├── requirements.txt               # Python dependencies
-└── .gitignore                     # Git exclusions
+├── Model.ipynb                        # Main analysis notebook
+├── preterm_birth_dataset.csv          # EMG feature dataset
+├── random_forest_model.pkl            # Trained classifier
+├── preterm_birth_dataset_cleaned.csv  # Cleaned Dataset
+├── README.md                          # This file
+├── requirements.txt                   # Python dependencies
+└── .gitignore                         # Git exclusions
 ```
 
 ## Installation & Usage
@@ -84,7 +84,7 @@ preterm/
 ### Setup
 ```bash
 # Clone repository
-git clone <repository-url>
+git clone https://github.com/amirosseinz/preterm-birth-emg-ml.git
 cd preterm
 
 # Install dependencies
@@ -146,7 +146,7 @@ print(f"Preterm probability: {probability:.2%}")
 - **Matplotlib/Seaborn** - Visualization
 - **Jupyter** - Interactive development
 
-## License
+
 
 This project is for educational and portfolio purposes.
 
