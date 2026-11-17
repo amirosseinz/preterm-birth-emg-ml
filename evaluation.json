@@ -1,0 +1,66 @@
+{
+  "data_sha256": "1a36e572ccbc41831afd9e4f7dbd51892cca45f1b056c588a9e85166a1b54d4c",
+  "legacy_split_audit": {
+    "processed_rows": 1440,
+    "test_rows": 432,
+    "test_rows_matching_a_training_feature_row": 208
+  },
+  "missing_feature_values": 99,
+  "models": {
+    "logistic": {
+      "balanced_accuracy": 0.78125,
+      "confusion_matrix": [
+        [
+          158,
+          2
+        ],
+        [
+          17,
+          23
+        ]
+      ],
+      "roc_auc": 0.8953125,
+      "sensitivity": 0.575,
+      "specificity": 0.9875
+    },
+    "majority": {
+      "balanced_accuracy": 0.5,
+      "confusion_matrix": [
+        [
+          160,
+          0
+        ],
+        [
+          40,
+          0
+        ]
+      ],
+      "roc_auc": 0.5,
+      "sensitivity": 0.0,
+      "specificity": 1.0
+    },
+    "random_forest": {
+      "balanced_accuracy": 0.80625,
+      "confusion_matrix": [
+        [
+          158,
+          2
+        ],
+        [
+          15,
+          25
+        ]
+      ],
+      "roc_auc": 0.896328125,
+      "sensitivity": 0.625,
+      "specificity": 0.9875
+    }
+  },
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scikit_learn": "1.8.0",
+  "seed": 42,
+  "test_positive": 40,
+  "test_rows": 200,
+  "train_rows": 800
+}
