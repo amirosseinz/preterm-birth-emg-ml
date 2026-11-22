@@ -9,6 +9,26 @@
   "models": {
     "logistic": {
       "balanced_accuracy": 0.78125,
+      "binomial_confidence": {
+        "confidence_level": 0.95,
+        "method": "Wilson score",
+        "sensitivity": {
+          "interval": [
+            0.42195068541991076,
+            0.7149060744004961
+          ],
+          "successes": 23,
+          "trials": 40
+        },
+        "specificity": {
+          "interval": [
+            0.9555746308159091,
+            0.9965653288918735
+          ],
+          "successes": 158,
+          "trials": 160
+        }
+      },
       "confusion_matrix": [
         [
           158,
@@ -25,6 +45,26 @@
     },
     "majority": {
       "balanced_accuracy": 0.5,
+      "binomial_confidence": {
+        "confidence_level": 0.95,
+        "method": "Wilson score",
+        "sensitivity": {
+          "interval": [
+            6.938893903907228e-18,
+            0.0876216011972866
+          ],
+          "successes": 0,
+          "trials": 40
+        },
+        "specificity": {
+          "interval": [
+            0.9765538048284949,
+            1.0
+          ],
+          "successes": 160,
+          "trials": 160
+        }
+      },
       "confusion_matrix": [
         [
           160,
@@ -41,6 +81,26 @@
     },
     "random_forest": {
       "balanced_accuracy": 0.80625,
+      "binomial_confidence": {
+        "confidence_level": 0.95,
+        "method": "Wilson score",
+        "sensitivity": {
+          "interval": [
+            0.4703243913730111,
+            0.7577702083276672
+          ],
+          "successes": 25,
+          "trials": 40
+        },
+        "specificity": {
+          "interval": [
+            0.9555746308159091,
+            0.9965653288918735
+          ],
+          "successes": 158,
+          "trials": 160
+        }
+      },
       "confusion_matrix": [
         [
           158,
@@ -57,6 +117,19 @@
     }
   },
   "numpy": "2.3.5",
+  "paired_auc_comparison": {
+    "candidate": "random_forest",
+    "confidence_interval": [
+      -0.06140820312499989,
+      0.05273632812499999
+    ],
+    "confidence_level": 0.95,
+    "difference": 0.0010156250000000755,
+    "method": "stratified paired percentile bootstrap",
+    "n_resamples": 2000,
+    "reference": "logistic",
+    "seed": 42
+  },
   "pandas": "2.2.3",
   "scikit_learn": "1.8.0",
   "seed": 42,
